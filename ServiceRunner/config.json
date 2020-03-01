@@ -1,0 +1,15 @@
+{
+  "logging": {
+    "file_path": null,
+    "level": "DEBUG"
+  },
+  "filename": "adios.csv",
+  "cam_width": 640,
+  "cam_height": 480,
+  "nn_config": {
+    "model_xml_path": "Models/face-detection-adas-0001.xml",
+    "target_label": 1,
+    "image_width": 672,
+    "image_height": 384
+  }
+}

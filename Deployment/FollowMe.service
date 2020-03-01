@@ -1,0 +1,21 @@
+[Unit]
+Description=Follow objects
+After=multi-user.target
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/python3 /home/pi/Documents/FollowMe/Deployment/FollowMe.py
+WorkingDirectory=/home/pi/Documents/FollowMe
+Environment="INTEL_OPENVINO_DIR=/opt/intel/openvino"
+Environment="INTEL_CVSDK_DIR=/opt/intel/openvino"
+Environment="InferenceEngine_DIR=/opt/intel/openvino/deployment_tools/inference_engine/share"
+Environment="HDDL_INSTALL_DIR=/opt/intel/openvino/deployment_tools/inference_engine/external/hddl"
+Environment="OpenCV_DIR=/opt/intel/openvino/opencv/cmake"
+Environment="LD_LIBRARY_PATH=/opt/intel/openvino/opencv/lib:/opt/intel/opencl:/opt/intel/openvino/deployment_tools/inference_engine/external/hddl/lib:/opt/intel/openvino/deployment_tools/inference_engine/external/gna/lib:/opt/intel/openvino/deployment_tools/inference_engine/external/mkltiny_lnx/lib:/opt/intel/openvino/deployment_tools/inference_engine/external/tbb/lib:/opt/intel/openvino/deployment_tools/inference_engine/lib/armv7l:"
+Environment="PATH=/opt/intel/openvino/deployment_tools/model_optimizer:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+Environment="PYTHONPATH=/opt/intel/openvino/python/python3.7:/opt/intel/openvino/python/python3:/opt/intel/openvino/deployment_tools/model_optimizer:/home/pi/Documents/FollowMe"
+User=pi
+
+[Install]
+WantedBy=multi-user.target
+
