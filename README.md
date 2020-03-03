@@ -5,7 +5,7 @@ This is the software for [MyPetBot](https://www.instructables.com/id/MyPetBot-A-
 It is intended to track an object and follow it.
 
 ## Installation
-Copy the folder FollowMe into you directory "Documents"
+Copy the folder FollowMe into your directory "Documents"
 
 
 ## Usage
