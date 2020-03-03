@@ -14,10 +14,10 @@ logger.info("Init Main logger")
 PAGE = """\
 <html>
 <head>
-<title>Raspberry Pi - Surveillance Camera</title>
+<title>MyPetBot</title>
 </head>
 <body>
-<center><h1>Raspberry Pi - Surveillance Camera</h1></center>
+<center><h1>MyPetBot</h1></center>
 <center><button type="button" onclick=sendStart()>Start!</button></center>
 <center><button type="button" onclick=sendStop()>Stop!</button></center>
 </body>

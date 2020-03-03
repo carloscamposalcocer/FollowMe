@@ -19,8 +19,6 @@ class Ardu:
         return self.ser.readline().decode()
 
     def send(self, X, Y):
-        # X = max(min(X, 2300), 700)
-        # Y = max(min(Y, 2300), 700)
         X = int(X + 1500)
         Y = int(-Y + 1500)
         b = [113, 4, X % 256, X // 256, Y % 256, Y // 256]
